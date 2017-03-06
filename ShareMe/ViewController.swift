@@ -60,7 +60,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
                     if task.error != nil {
                         print(task.error)
                     } else {
-                        print(task.result)
+                        DispatchQueue.main.async(execute: {
+                            self.performSegue(withIdentifier: "login", sender: self)
+                        })
                     }
 
                     return nil
@@ -88,11 +90,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().shouldFetchBasicProfile = true
     }
-    
-    
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()

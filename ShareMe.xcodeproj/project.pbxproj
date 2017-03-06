@@ -35,6 +35,10 @@
 		1FBCD8651E6BBA05008790A4 /* AWSDynamoDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBCD8421E6B789D008790A4 /* AWSDynamoDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FBCD8661E6BBA05008790A4 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBCD8431E6B789D008790A4 /* AWSS3.framework */; };
 		1FBCD8671E6BBA05008790A4 /* AWSS3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBCD8431E6B789D008790A4 /* AWSS3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FBCD86A1E6CB9DA008790A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8691E6CB9DA008790A4 /* User.swift */; };
+		1FBCD86C1E6CBD7E008790A4 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD86B1E6CBD7D008790A4 /* Follower.swift */; };
+		1FBCD8731E6D1E21008790A4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8721E6D1E21008790A4 /* UserViewController.swift */; };
+		1FBCD8751E6D1EDE008790A4 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +82,10 @@
 		1FBCD85A1E6BB90A008790A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1FBCD85C1E6BB92E008790A4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1FBCD85E1E6BB93C008790A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1FBCD8691E6CB9DA008790A4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1FBCD86B1E6CBD7D008790A4 /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		1FBCD8721E6D1E21008790A4 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +138,7 @@
 		1FBCD82C1E6B7137008790A4 /* ShareMe */ = {
 			isa = PBXGroup;
 			children = (
+				1FBCD8721E6D1E21008790A4 /* UserViewController.swift */,
 				1FBCD8491E6BB74A008790A4 /* GoogleService-Info.plist */,
 				1FBCD82D1E6B7138008790A4 /* AppDelegate.swift */,
 				1FBCD82F1E6B7138008790A4 /* ViewController.swift */,
@@ -138,6 +147,9 @@
 				1FBCD8361E6B713B008790A4 /* LaunchScreen.storyboard */,
 				1FBCD8391E6B713B008790A4 /* Info.plist */,
 				1FBCD8481E6B78E9008790A4 /* ShareMe-Bridging-Header.h */,
+				1FBCD8691E6CB9DA008790A4 /* User.swift */,
+				1FBCD86B1E6CBD7D008790A4 /* Follower.swift */,
+				1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */,
 			);
 			path = ShareMe;
 			sourceTree = "<group>";
@@ -245,8 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBCD8751E6D1EDE008790A4 /* DatabaseService.swift in Sources */,
 				1FBCD8301E6B7138008790A4 /* ViewController.swift in Sources */,
+				1FBCD8731E6D1E21008790A4 /* UserViewController.swift in Sources */,
 				1FBCD82E1E6B7138008790A4 /* AppDelegate.swift in Sources */,
+				1FBCD86A1E6CB9DA008790A4 /* User.swift in Sources */,
+				1FBCD86C1E6CBD7E008790A4 /* Follower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
