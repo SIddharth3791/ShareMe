@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5D0AAA1E6E7AB900317EBD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D0AA91E6E7AB900317EBD /* PostViewController.swift */; };
+		1F5D0AAC1E6FC5D600317EBD /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D0AAB1E6FC5D400317EBD /* cell.swift */; };
+		1F5D0AAE1E6FCA7600317EBD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D0AAD1E6FCA7500317EBD /* FeedViewController.swift */; };
 		1FBCD82E1E6B7138008790A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD82D1E6B7138008790A4 /* AppDelegate.swift */; };
 		1FBCD8301E6B7138008790A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD82F1E6B7138008790A4 /* ViewController.swift */; };
 		1FBCD8331E6B713B008790A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FBCD8311E6B713B008790A4 /* Main.storyboard */; };
@@ -39,6 +42,7 @@
 		1FBCD86C1E6CBD7E008790A4 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD86B1E6CBD7D008790A4 /* Follower.swift */; };
 		1FBCD8731E6D1E21008790A4 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8721E6D1E21008790A4 /* UserViewController.swift */; };
 		1FBCD8751E6D1EDE008790A4 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */; };
+		1FBCD8771E6E6134008790A4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBCD8761E6E6134008790A4 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F5D0AA91E6E7AB900317EBD /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		1F5D0AAB1E6FC5D400317EBD /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		1F5D0AAD1E6FCA7500317EBD /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1FBCD82A1E6B7137008790A4 /* ShareMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBCD82D1E6B7138008790A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FBCD82F1E6B7138008790A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 		1FBCD86B1E6CBD7D008790A4 /* Follower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		1FBCD8721E6D1E21008790A4 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		1FBCD8761E6E6134008790A4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,10 @@
 				1FBCD8691E6CB9DA008790A4 /* User.swift */,
 				1FBCD86B1E6CBD7D008790A4 /* Follower.swift */,
 				1FBCD8741E6D1EDE008790A4 /* DatabaseService.swift */,
+				1FBCD8761E6E6134008790A4 /* Post.swift */,
+				1F5D0AA91E6E7AB900317EBD /* PostViewController.swift */,
+				1F5D0AAB1E6FC5D400317EBD /* cell.swift */,
+				1F5D0AAD1E6FCA7500317EBD /* FeedViewController.swift */,
 			);
 			path = ShareMe;
 			sourceTree = "<group>";
@@ -257,11 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5D0AAA1E6E7AB900317EBD /* PostViewController.swift in Sources */,
 				1FBCD8751E6D1EDE008790A4 /* DatabaseService.swift in Sources */,
+				1F5D0AAE1E6FCA7600317EBD /* FeedViewController.swift in Sources */,
 				1FBCD8301E6B7138008790A4 /* ViewController.swift in Sources */,
 				1FBCD8731E6D1E21008790A4 /* UserViewController.swift in Sources */,
 				1FBCD82E1E6B7138008790A4 /* AppDelegate.swift in Sources */,
 				1FBCD86A1E6CB9DA008790A4 /* User.swift in Sources */,
+				1FBCD8771E6E6134008790A4 /* Post.swift in Sources */,
+				1F5D0AAC1E6FC5D600317EBD /* cell.swift in Sources */,
 				1FBCD86C1E6CBD7E008790A4 /* Follower.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +406,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShareMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
@@ -413,6 +430,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShareMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
@@ -444,6 +462,7 @@
 				1FBCD83E1E6B713B008790A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

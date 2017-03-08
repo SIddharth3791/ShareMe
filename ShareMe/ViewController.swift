@@ -49,7 +49,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate, 
 
                 let syncClient = AWSCognito.default()
                 
-                let dataset = syncClient.openOrCreateDataset("ShareApp")
+                let dataset = syncClient.openOrCreateDataset("ShareMe") //ShareApp Changed to ShareMe
 
                 dataset.setString(user.profile.email, forKey: "email")
             
