@@ -1,5 +1,7 @@
 # ShareMe
+ShareMe is an iOS photo sharing application. Which is based on instagram application functionality using AWS cloud services 
 
+#Technology
 Technologies used in this project are  Swift, Google-SDK and Amazon Web Service(IAM, S3 Bucket, Cognito, DynamoDB and Lambda)
 
 #Functionality 
